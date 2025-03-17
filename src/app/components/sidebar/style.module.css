@@ -1,0 +1,102 @@
+.main_sidebar {
+    box-shadow: 0px 0px 20px 0px rgba(21, 10, 54, 0.1);
+}
+
+.container_sidebar {
+    position: absolute;
+    top: 8%;
+    width: 100%;
+    background-color: #fff;
+    border-top-right-radius: 40px;
+}
+
+.divider_container {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+.hr_line {
+    width: 50%;
+    color: rgba(21, 10, 54, 0.3);
+}
+
+.container_info_admin {
+    margin-bottom: 8%;
+    margin-top: 5%;
+    padding: 0px 10px 0px 10px;
+}
+
+.name_admin {
+    text-transform: uppercase;
+    font-size: 11pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rol_name {
+    font-size: 9pt;
+    color: rgba(21, 10, 54, 0.8);
+}
+
+.logotipo {
+    margin-top: 6%;
+    font-size: 22pt;
+}
+
+.container_nav {
+    background-color: #23b4b0;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.link_container {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+}
+
+.link_container:hover {
+    background-color: #23b4b0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #23b4b0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.container_icon {
+    background: #fff;
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 0px rgba(21, 10, 54, 0.2);
+}
+
+.link_title {
+    margin-left: 10px;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.link_title_active {
+    color: #fff;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 768px) {
+    .container_nav {
+        height: 200px;
+    }
+    .container_sidebar {
+        top: 10%;
+    }
+}
