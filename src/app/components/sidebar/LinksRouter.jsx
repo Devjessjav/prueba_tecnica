@@ -21,7 +21,7 @@ export default function LinksRouter() {
   const routerLinks = [
     {
       title: "Productos",
-      pathName: "/productos",
+      pathName: "/",
       icon: <IconPackages stroke={1} />,
     }
   ];

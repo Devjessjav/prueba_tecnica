@@ -1,0 +1,27 @@
+.container_no_data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no_data_info_container{
+    margin-top: 10%;
+}
+
+.text_no_data{
+    text-align: center;
+    font-size: 22pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(70, 66, 85, 1);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .text_no_data{
+        font-size: 16pt;
+    }
+    .no_data_info_container{
+        margin-top: 25%;
+    }
+}

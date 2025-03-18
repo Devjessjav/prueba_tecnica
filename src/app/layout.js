@@ -1,4 +1,8 @@
 import "./globals.css";
+// Components
+import Sidebar from "./components/sidebar/Sidebar";
+// Context
+import { GlobalProvider } from "./context/GlobalContext";
 
 export const metadata = {
   title: "Prueba Técnica",
@@ -8,10 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        {children}
+      <body className={`antialiased`}>
+        <GlobalProvider>
+          <Sidebar />
+          <div className="p-4 sm:ml-64">{children}</div>
+        </GlobalProvider>
       </body>
     </html>
   );

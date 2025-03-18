@@ -1,0 +1,124 @@
+.container_main_modal {
+    background-color: rgba(000, 000, 000, 0.8);
+}
+
+.title_modal {
+    background: #23b4b0;
+    font-size: 22pt;
+    color: #fff;
+    border-top-right-radius: 25px;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.container_icon {
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 0px rgba(21, 10, 54, 0.3);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.label_css {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(70, 66, 85, 1);
+    font-size: 10pt;
+}
+
+.modal_size {
+    width: 30%;
+}
+
+.img_preview {
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 150px;
+    min-height: 150px;
+    box-shadow: 0px 0px 20px 0px rgba(21, 10, 54, 0.3);
+}
+
+.delete_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 0, 0, 0.6);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.container_images {
+    display: flex;
+    overflow: auto;
+    margin-top: 3%;
+}
+
+.button_handle_images {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.cancel_button {
+    border: 1px solid red;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 1px;
+}
+
+.add_button {
+    border: 1px solid #23b4b0;
+    border-radius: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_button:hover {
+    background: #23b4b0;
+    color: #fff;
+}
+
+.font_small {
+    font-size: 10pt;
+}
+.spinner_css{
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .modal_size {
+        width: 98%;
+    }
+    .title_modal {
+        font-size: 14pt;
+        padding: 5px 10px 5px 10px;
+    }
+    .label_css {
+        font-size: 9pt;
+    }
+    .add_button {
+        font-size: 9pt;
+    }
+    .cancel_button {
+        font-size: 9pt;
+    }
+    .icon_closed_size{
+        width: 20px;
+        height: 20px;
+    }
+    .spinner_css{
+        width: 20px;
+        height: 20px;
+    }
+}

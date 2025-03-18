@@ -48,7 +48,7 @@ export default function Sidebar() {
             aria-label="Barra lateral"
           >
             <div
-              className={`flex justify-end mb-4 md:hidden absolute ${style.button_logeout_mobile}`}
+              className={`flex justify-end mb-4 md:hidden absolute ${style.button_closed}`}
             >
               <button
                 onClick={toggleSidebar}
@@ -58,7 +58,7 @@ export default function Sidebar() {
               </button>
             </div>
             <div className={`${style.container_nav}`}>
-              <h2 className={style.logotipo}>LOGOTIPO</h2>
+              <h2 className={style.logotipo}>DASHBOARD</h2>
             </div>
 
             <div
@@ -66,20 +66,17 @@ export default function Sidebar() {
             >
               <div className={style.container_info_admin}>
                 <div className="grid grid-cols-12">
-                  <div className="col-span-11">
+                  <div className="col-span-12">
                     <p
-                      className={`text-center ${style.name_admin} ${poppins.className}`}
+                      className={`text-center ${style.title_test} ${poppins.className}`}
                     >
-                      Nombre Apellido
+                      Prueba Técnica
                     </p>
                     <p
-                      className={`text-center ${style.rol_name} ${poppins.className}`}
+                      className={`text-center ${style.name_dev} ${poppins.className}`}
                     >
-                      Administrador
+                      Jesús J. Ruiz
                     </p>
-                  </div>
-                  <div className="col-span-1 flex justify-center">
-                    <IconEdit stroke={1} />
                   </div>
                 </div>
               </div>
