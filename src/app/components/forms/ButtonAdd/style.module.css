@@ -27,3 +27,16 @@
     font-weight: 500;
     color: rgba(70, 66, 85, 1);
 }
+
+@media (max-width: 768px) {
+    .text_button{
+        margin-left: 5px;
+    }
+    .container_icon {
+        padding: 3px;
+    }
+    .button_css {
+        padding: 2px 10px 1px 10px;
+        font-size: 12px;
+    }
+}

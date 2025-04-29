@@ -4,9 +4,12 @@ import React, { useState, useContext } from "react";
 import Header from "./components/header/Header";
 import ProductTable from "./components/productTable/ProductTable";
 import ButtonAdd from "./components/forms/ButtonAdd/ButtonAdd";
+import ButtonExcel from "./components/forms/ButtonAdd/ButtonExcel";
 import NoData from "./components/noData/NoData";
 // Modal
 import ProductModal from "./modal/ProductModal";
+// Icons
+import { IconPlus, IconFileTypeXls } from "@tabler/icons-react";
 // Context
 import { GlobalContext } from "./context/GlobalContext";
 // style
@@ -43,9 +46,24 @@ export default function Home() {
           </div>
         </div>
         {products.length > 0 && (
-          <div className="col-span-12 md:col-span-8 flex justify-center md:justify-end items-center">
-            <ButtonAdd text="Agregar Producto" setShow={setShow} />
-          </div>
+          <>
+            <div className="flex md:col-span-8 md:justify-end gap-4">
+              <div className="flex justify-center md:justify-end items-center">
+                <ButtonExcel
+                  text="Descargar Excel"
+                  icon={<IconFileTypeXls stroke={2} />}
+                  productos={products}
+                />
+              </div>
+              <div className="flex justify-center md:justify-end items-center">
+                <ButtonAdd
+                  text="Agregar Producto"
+                  icon={<IconPlus stroke={2} />}
+                  setShow={setShow}
+                />
+              </div>
+            </div>
+          </>
         )}
       </div>
 

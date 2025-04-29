@@ -20,7 +20,7 @@ const poppins = Poppins({
 
 export default function ProductModal({ setShow, isEdit, productToEdit }) {
   // UseContext
-  const { addProduct, updateProduct } = useContext(GlobalContext);
+  const { addProduct, updateProduct, products } = useContext(GlobalContext); // Importa 'products'
   // validations
   const [errors, setErrors] = useState({});
   // FormValues
@@ -61,10 +61,19 @@ export default function ProductModal({ setShow, isEdit, productToEdit }) {
     if (!newProduct.codigo.trim()) {
       tempErrors.codigo = "El código es requerido.";
       isValid = false;
+    } else if (
+      !isEdit && // Solo validar al crear un nuevo producto
+      products.some((product) => product.codigo === newProduct.codigo)
+    ) {
+      tempErrors.codigo = "Ya existe un producto con este código.";
+      isValid = false;
     }
 
     if (!newProduct.cantidad.trim()) {
       tempErrors.cantidad = "La cantidad es querida.";
+      isValid = false;
+    } else if (isNaN(Number(newProduct.cantidad)) || Number(newProduct.cantidad) <= 0) {
+      tempErrors.cantidad = "La cantidad debe ser un número mayor que 0.";
       isValid = false;
     }
 

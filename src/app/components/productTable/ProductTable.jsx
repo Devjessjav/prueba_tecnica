@@ -18,6 +18,7 @@ import ProductModal from "@/app/modal/ProductModal";
 import { GlobalContext } from "@/app/context/GlobalContext";
 import InputSearch from "../forms/InputSearch/InputSearch";
 
+
 const SortIcon = ({ sortOrder, field }) => {
   const isAsc = sortOrder?.field === field && sortOrder?.direction === "asc";
   const isDesc = sortOrder?.field === field && sortOrder?.direction === "desc";
